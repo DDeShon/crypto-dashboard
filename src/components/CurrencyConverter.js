@@ -4,7 +4,7 @@ import ExchangeRate from "./ExchangeRate";
 const CurrencyConverter = () => {
   const currencies = ["BTC", "ETH", "USD", "XRP", "LTC", "ADA"];
   const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState("BTC");
-  const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("USD");
+  const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("BTC");
 
   console.log(chosenPrimaryCurrency);
   console.log(chosenSecondaryCurrency);
