@@ -1,15 +1,42 @@
 import { useState } from "react";
 import ExchangeRate from "./ExchangeRate";
+import axios from "axios";
 
 const CurrencyConverter = () => {
   const currencies = ["BTC", "ETH", "USD", "XRP", "LTC", "ADA"];
   const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState("BTC");
   const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("BTC");
   const [amount, setAmount] = useState(1);
+  const [exchangeRate, setExchangeRate] = useState(0);
 
   console.log(chosenPrimaryCurrency);
   console.log(chosenSecondaryCurrency);
   console.log(amount);
+
+  const convert = () => {
+    const options = {
+      method: "GET",
+      url: "https://alpha-vantage.p.rapidapi.com/query",
+      params: {
+        from_currency: chosenPrimaryCurrency,
+        function: "CURRENCY_EXCHANGE_RATE",
+        to_currency: chosenSecondaryCurrency,
+      },
+      headers: {
+        "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
+        "x-rapidapi-key": "77781d9952msh652064533e934a7p1c14d8jsn17b5c44455c4",
+      },
+    };
+
+    axios
+      .request(options)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   return (
     <div className="currency-converter">
@@ -61,6 +88,9 @@ const CurrencyConverter = () => {
             </tr>
           </tbody>
         </table>
+        <button id="convert-button" onClick={convert}>
+          Convert
+        </button>
       </div>
       <ExchangeRate />
     </div>
