@@ -20,10 +20,13 @@ code {
 
 .news-feed {
   background-color: orange;
+  height: 100vh;
+  width: 100%;
 }
 
 .currency-converter {
   background-color: green;
+  height: 100vh;
 }
 
 .exchange-rate {
