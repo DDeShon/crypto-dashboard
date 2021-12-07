@@ -26,12 +26,12 @@ const NewsFeed = () => {
 
   console.log(articles);
 
-  const first14Articles = articles?.slice(0, 14);
+  const first20Articles = articles?.slice(0, 20);
 
   return (
     <div className="news-feed">
       <h1>NewsFeed</h1>
-      {first14Articles?.map((article, _index) => (
+      {first20Articles?.map((article, _index) => (
         <div key={_index}>
           <a href={article.url}>
             <p>{article.title}</p>
