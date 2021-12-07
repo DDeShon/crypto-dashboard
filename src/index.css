@@ -17,7 +17,8 @@ code {
 }
 
 .news-feed {
-  background-color: gray;
+  padding-left: 2rem;
+  background-color: rgb(180, 180, 180);
   height: 100vh;
   width: 100%;
 }
