@@ -31,8 +31,12 @@ const NewsFeed = () => {
   return (
     <div className="news-feed">
       <h1>NewsFeed</h1>
-      {first14Articles?.map((article) => (
-        <p>{article.title}</p>
+      {first14Articles?.map((article, _index) => (
+        <div key={_index}>
+          <a href={article.url}>
+            <p>{article.title}</p>
+          </a>
+        </div>
       ))}
     </div>
   );
