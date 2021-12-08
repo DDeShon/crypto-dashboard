@@ -16,15 +16,12 @@ const NewsFeed = () => {
     axios
       .request(options)
       .then((response) => {
-        console.log(response.data);
         setArticles(response.data);
       })
       .catch((error) => {
         console.error(error);
       });
   }, []);
-
-  console.log(articles);
 
   const first20Articles = articles?.slice(0, 20);
 
