@@ -24,10 +24,18 @@ code {
 }
 
 .currency-converter {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   background-color: rgb(63, 0, 63);
   color: white;
   height: 100vh;
+}
+
+.currency-header {
+  padding: 1rem;
+}
+
+.input-box {
+  padding: 1rem;
 }
 
 .exchange-rate {
@@ -36,5 +44,5 @@ code {
   background-color: rgb(0, 80, 0);
   align-items: center;
   justify-self: center;
-  margin-top: 50px;
+  margin-top: 10rem;
 }
