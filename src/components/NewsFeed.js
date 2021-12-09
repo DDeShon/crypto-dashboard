@@ -27,7 +27,7 @@ const NewsFeed = () => {
 
   return (
     <div className="news-feed">
-      <h1>NewsFeed</h1>
+      <h2>Daily Crypto News</h2>
       {first20Articles?.map((article, _index) => (
         <div key={_index}>
           <a href={article.url}>
