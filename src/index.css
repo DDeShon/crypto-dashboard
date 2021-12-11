@@ -73,11 +73,17 @@ code {
   }
 
   .currency-header {
+    margin-bottom: 0.5rem;
     padding: 0;
   }
 
   .input-box {
     padding: 0;
+  }
+
+  #convert-button {
+    display: flex;
+    margin: 1rem auto;
   }
 
   .exchange-rate {
@@ -86,6 +92,6 @@ code {
     background-color: rgb(0, 80, 0);
     align-items: center;
     justify-self: center;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
 }
