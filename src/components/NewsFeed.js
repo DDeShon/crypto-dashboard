@@ -23,7 +23,7 @@ const NewsFeed = () => {
       });
   }, []);
 
-  const first30Articles = articles?.slice(0, 30);
+  const first30Articles = articles?.slice(0, 40);
 
   return (
     <div className="news-feed">
