@@ -32,6 +32,10 @@ code {
   width: 100%;
 }
 
+.news-feed p {
+  margin-bottom: 0.5rem;
+}
+
 .news-header {
   margin-bottom: 1rem;
 }
