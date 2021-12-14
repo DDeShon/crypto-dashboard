@@ -63,7 +63,7 @@ code {
   align-items: center;
   justify-self: center;
   margin-top: 6rem;
-  box-shadow: 0 3px 10px rgb(0, 41, 0);
+  box-shadow: 0 0 15px rgb(0, 41, 0);
 }
 
 @media only screen and (max-width: 768px) {
