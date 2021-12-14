@@ -23,12 +23,12 @@ const NewsFeed = () => {
       });
   }, []);
 
-  const first30Articles = articles?.slice(0, 40);
+  const first40Articles = articles?.slice(0, 40);
 
   return (
     <div className="news-feed">
       <h2 className="news-header">Daily Crypto News</h2>
-      {first30Articles?.map((article, _index) => (
+      {first40Articles?.map((article, _index) => (
         <div key={_index}>
           <a href={article.url}>
             <p>{article.title}</p>
