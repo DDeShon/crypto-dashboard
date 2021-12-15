@@ -26,7 +26,6 @@ code {
 }
 
 .news-feed {
-  /* padding-left: 1rem; */
   background-color: rgb(255, 255, 255);
 }
 
@@ -55,7 +54,8 @@ code {
 }
 
 #convert-button {
-  margin-top: 2rem;
+  display: flex;
+  margin: 2rem auto 0;
   padding: 0.25rem;
 }
 
