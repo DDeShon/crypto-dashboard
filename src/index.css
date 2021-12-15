@@ -49,6 +49,10 @@ code {
   padding: 0 1rem;
 }
 
+.label {
+  padding-right: 0.5rem;
+}
+
 .input-box {
   padding: 1rem;
 }

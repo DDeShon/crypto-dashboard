@@ -33,10 +33,10 @@ app.get("/convert", (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      console.log(res.json);
       res.json(
         response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]
       );
+      console.log(response.data);
     })
     .catch((error) => {
       console.error(error);
