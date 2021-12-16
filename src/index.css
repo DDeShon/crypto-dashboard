@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 64px;
+}
+
 h2 {
   text-align: center;
 }
@@ -29,6 +33,7 @@ code {
 
 .app-wrapper {
   display: flex;
+  margin-top: 6rem;
 }
 
 .currency-converter {
@@ -36,9 +41,10 @@ code {
   flex-direction: column;
   border-radius: 1rem;
   justify-content: center;
-  margin: 5px;
+  margin: 1rem;
   background-color: rgb(63, 0, 63);
   color: white;
+  max-width: 400px;
 }
 
 .currency-header {
@@ -72,8 +78,8 @@ code {
 .news-feed {
   background-color: rgb(158, 158, 158);
   border-radius: 1rem;
-  margin: 5px;
-  padding: 10px;
+  margin: 1rem;
+  padding: 1rem;
   max-width: 400px;
   max-height: 600px;
   overflow: auto;
