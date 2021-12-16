@@ -27,22 +27,16 @@ code {
   align-items: center;
 }
 
-.news-feed {
-  background-color: rgb(255, 255, 255);
-}
-
-.news-feed p {
-  padding-left: 0.5rem;
-  margin-bottom: 0.45rem;
-}
-
-.news-header {
-  padding-bottom: 1rem;
-  color: rgb(63, 0, 63);
+.app-wrapper {
+  display: flex;
 }
 
 .currency-converter {
-  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: center;
+  margin: 5px;
   background-color: rgb(63, 0, 63);
   color: white;
 }
@@ -75,6 +69,31 @@ code {
   box-shadow: 0 0 15px rgb(0, 30, 0);
 }
 
+.news-feed {
+  background-color: rgb(158, 158, 158);
+  border-radius: 1rem;
+  margin: 5px;
+  padding: 10px;
+  max-width: 400px;
+  max-height: 600px;
+  overflow: auto;
+  /* -ms-overflow-style: none; */
+  scrollbar-width: none;
+}
+
+.news-feed::-webkit-scrollbar {
+  display: none;
+}
+
+.news-feed p {
+  padding-left: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.news-header {
+  padding-bottom: 1rem;
+  color: rgb(63, 0, 63);
+}
 @media only screen and (max-width: 768px) {
   .app {
     display: inline;
