@@ -29,6 +29,8 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(173, 216, 230);
+  height: 100vh;
 }
 
 .app-wrapper {
