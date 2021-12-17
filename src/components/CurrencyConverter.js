@@ -4,6 +4,7 @@ import axios from "axios";
 
 const CurrencyConverter = () => {
   const currencies = ["BTC", "ETH", "USD", "XRP", "LTC", "ADA"];
+  const filteredCurrencies = ["BTC", "ETH", "XRP", "LTC", "ADA"];
   const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState("BTC");
   const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("BTC");
   const [amount, setAmount] = useState(1);
@@ -65,7 +66,7 @@ const CurrencyConverter = () => {
                   className="currency-options"
                   onChange={(e) => setChosenPrimaryCurrency(e.target.value)}
                 >
-                  {currencies.map((currency, _index) => (
+                  {filteredCurrencies.map((currency, _index) => (
                     <option key={_index}>{currency}</option>
                   ))}
                 </select>
