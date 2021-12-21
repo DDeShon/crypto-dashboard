@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 64px;
-  color: rgb(158, 158, 158);
-}
-
 h2 {
   text-align: center;
 }
@@ -20,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(66, 58, 80);
+  background-color: rgb(0, 30, 0);
 }
 
 code {
@@ -34,9 +29,18 @@ code {
   align-items: center;
 }
 
+.app-title {
+  font-size: 64px;
+  color: rgb(63, 0, 63);
+  background-color: rgb(158, 158, 158);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
 .app-wrapper {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .currency-converter {
@@ -103,8 +107,11 @@ code {
   color: rgb(63, 0, 63);
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  .app-title {
     font-size: 28px;
+    margin: 0.5rem;
+    width: 92%;
+    text-align: center;
   }
 
   .app {
@@ -118,6 +125,7 @@ code {
     flex-direction: column;
     margin: 0;
   }
+
   .currency-converter {
     padding-top: 0;
   }
